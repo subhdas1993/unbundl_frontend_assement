@@ -3,15 +3,28 @@
 /* Defaults CSS */
 .headerSection{
    width: 100%;
-   padding-block: 2svh;
    position: fixed;
    inset: 0 auto auto 0;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    background-color: #fff;
 }
 
+.headerSection > div:first-child{
+   padding-block: 1svh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.headerSection > div:last-child{
+   font-family: "Instrument Sans", sans-serif;
+   text-align: center;
+   color: #000;
+   background-image: linear-gradient(to right, #CFF0C4, #C7E0F2);
+}
+.headerSection > div:last-child span{
+   text-decoration: line-through;
+   color: #C0C0C0;
+}
 
 .contactBtn {
   width: 60px;
@@ -58,6 +71,9 @@
   transform: translateY(-50%);
 
   opacity: 0;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
 
   animation: textVisibility 8s ease-in-out infinite;
 }
@@ -110,7 +126,6 @@
   }
 }
 
-
 .footerSection{
    display: none;
 }
@@ -125,10 +140,6 @@
 
 /* For the width of 1024px and above */
 @media only screen and (min-width: 1024px){
-   .headerSection{
-      margin: auto;
-   }
-
    .logoSection{
       margin-left: 5%;
    }
