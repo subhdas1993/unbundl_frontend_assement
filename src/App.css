@@ -129,6 +129,69 @@
 }
 /* Header Component End */
 
+/* Main Component Start */
+.whistleMainSection{
+   background-color: #F0F9FF;
+   padding: 2svh;
+}
+
+.whistleSection{
+   color: #000;
+}
+
+.whistleSection > div{
+   border-radius: 16px;
+}
+
+.whistleSection > div:first-child{
+   background-color: #fff;
+   padding: 3svh;
+}
+
+.whistleSection > div:first-child > div:first-child {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 800;
+   font-size: 20px;
+}
+
+.whistleListSection{
+   padding-top: 3svh;
+}
+
+.whistleListSectionFlex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: "Instrument Sans", sans-serif;
+   font-size: 14px;
+}
+
+.whistleListSectionFlex > div:last-child{
+   width: 80%;
+}
+
+.whistleListSectionFlexListHeading{
+   font-weight: 800;
+}
+
+.whistleImg4Layout{
+   width: 100%;
+   aspect-ratio: 1/1;
+}
+
+.showAccordion{
+   padding: 3svh;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 800;
+   font-size: 40px;
+}
+
+.showAccordion span{
+   color:#8F62D4;
+}
+/* Main Component End */
+
 .footerSection{
    display: none;
 }
@@ -154,6 +217,27 @@
       margin-right: 5%;
    }
    /* Header Component End */
+
+
+   /* Main Component Start */
+   .whistleSection{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+   }
+
+   .whistleSection > div:first-child{
+      width: 60%;
+   }
+
+   .whistleSection > div:last-child{
+      width: 40%;
+   }
+
+   /* Main Component End */
 
    .footerSection{
       position: fixed;
