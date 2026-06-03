@@ -130,6 +130,40 @@
 /* Header Component End */
 
 /* Main Component Start */
+.clinicSection{
+   display: block;
+}
+.clinicImgLayout{
+   width: 100%;
+}
+.clinicDetailsLayout{
+   padding: 2svh 2svw;
+   color: #000;
+}
+
+.clinicDetailsLayout > div > div:first-child{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 800;
+   font-size: 20px;
+}
+
+.clinicDetailsLayout > div > div:nth-child(2){
+   margin-block: 3svh; 
+}
+
+.clinicDetailsLayout > div > div:nth-child(2), .clinicDetailsLayout > div > div:last-child{
+   font-family: "Instrument Sans", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+.callbackbutton{
+   background-color: #8F62D4;
+   color: #fff;
+   border: 1px solid #8F62D4;
+   padding: 2svh 4svh;
+   border-radius: 16px;
+}
 .whistleMainSection{
    background-color: #F0F9FF;
    padding: 2svh;
@@ -177,6 +211,7 @@
 .whistleImg4Layout{
    width: 100%;
    aspect-ratio: 1/1;
+   border-radius: 16px;
 }
 
 .showAccordion{
@@ -227,6 +262,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px;
+      gap: 30px;
    }
 
    .whistleSection > div:first-child{
@@ -237,6 +273,24 @@
       width: 40%;
    }
 
+   .clinicSection{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .clinicSection > div:first-child{
+      width: 50%;
+   }
+
+   .clinicDetailsLayout{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      padding: 6svh;
+   }
    /* Main Component End */
 
    .footerSection{

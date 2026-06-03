@@ -1,10 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
 import './App.css'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import Main from './components/Main'
 
 function App() {
@@ -28,7 +24,6 @@ function App() {
     <>
       <Header headerRef={headerRef}/>
       <Main headerHeight={headerHeight}/>
-      <Footer/>
     </>
   )
 }

@@ -4,10 +4,29 @@ import whistleImg1 from '../assets/images/Frame 2609800.svg'
 import whistleImg2 from '../assets/images/Group 2609315.png'
 import whistleImg3 from '../assets/images/Group 2609309.png'
 import whistleImg4 from '../assets/images/Frame 51 2.png'
+import clinicImg from '../assets/images/Rectangle 3022.png'
 
 function Main({ headerHeight }) {
   return (
     <div style={{ marginTop: `${headerHeight}px` }}>
+      <div className='clinicSection'>
+        <div>
+          <img src={clinicImg} alt="clinicImg" className='clinicImgLayout' />
+        </div>
+        <div className='clinicDetailsLayout'>
+          <div>
+            <div>
+              We are Doctor-led, not direct-to-customers
+            </div>
+            <div>
+              We don't offer direct-to-customer invisible aligners. We treat you in a Dental clinic with an Orthodontist. Aligners are just the beginning;  we ensure comprehensive treatment in over 450+ clinics nationwide.
+            </div>
+            <div>
+              <button className='callbackbutton'>Get a Callback</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='whistleMainSection'>
         <div className='whistleSection'>
           <div>
@@ -43,7 +62,7 @@ function Main({ headerHeight }) {
             </div>
           </div>
           <div>
-            <img src={whistleImg4} alt="WhistleImg4" className='whistleImg4Layout'/>
+            <img src={whistleImg4} alt="WhistleImg4" className='whistleImg4Layout' />
           </div>
         </div>
       </div>
