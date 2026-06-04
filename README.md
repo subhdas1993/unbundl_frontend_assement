@@ -1,3 +1,5 @@
+# Read the "Local Setup", "API Link" and "What are the approaches?" carefully
+
 # Local Setup Guide
 
 Follow the steps below to set up and run the project on your local machine.
@@ -36,18 +38,6 @@ The application will be available at:
 http://localhost:5173
 ```
 
-## 5. Build for Production(if neccessary)
-
-```bash
-npm run build
-```
-
-## 6. Preview the Production Build(if neccessary)
-
-```bash
-npm run preview
-```
-
 ## Prerequisites
 
 Make sure the following are installed on your system:
@@ -64,3 +54,11 @@ If you encounter dependency-related issues, try removing the existing dependenci
 rm -rf node_modules package-lock.json
 npm install
 ```
+# API Link
+
+[Click Here]("https://jsonplaceholder.typicode.com/posts?_limit=10")
+
+This one send 100 post that's why "?_limit=10" is used.
+
+# What are the approaches?
+Create Multiple Components. Use single CSS file with proper information. Try to replicate as much as possible on time. 
