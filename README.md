@@ -1,16 +1,76 @@
-# React + Vite
+# Local Setup Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Follow the steps below to set up and run the project on your local machine.
 
-Currently, two official plugins are available:
+## 1. Clone the Repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
 
-## React Compiler
+## 2. Navigate to the Project Directory
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+cd your-repository
+```
 
-## Expanding the ESLint configuration
+## 3. Install Dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Using npm:
+
+```bash
+npm install
+```
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the project root directory and add the required environment variables.
+
+Example:
+
+```env
+VITE_API_URL=your_api_url
+```
+
+> Replace the values above with the actual configuration required for the project.
+
+## 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## 6. Build for Production
+
+```bash
+npm run build
+```
+
+## 7. Preview the Production Build
+
+```bash
+npm run preview
+```
+
+## Prerequisites
+
+Make sure the following are installed on your system:
+
+* Node.js (v18 or later recommended)
+* npm
+* Git
+
+## Troubleshooting
+
+If you encounter dependency-related issues, try removing the existing dependencies and reinstalling them:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
